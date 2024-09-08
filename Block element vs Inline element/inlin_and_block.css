@@ -1,0 +1,17 @@
+.red {
+    color: red;
+}
+.blue {
+    color: rgb(0, 68, 177);
+}
+.green {
+    color: green
+}
+.yellow {
+    color: rgb(241, 177, 0)
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+}

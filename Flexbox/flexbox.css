@@ -1,0 +1,97 @@
+.four-flex-css {
+    font-size: 36px;
+    list-style: none;
+}
+
+.four-flex-css li {
+    margin-bottom: 25px;
+}
+
+.grey-text {
+    color: grey;
+}
+
+.css-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 54px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.flex-row {
+    /* display: flex; */
+}
+.flex-row>div {
+    /* width: 25%; */
+}
+
+.flex-wrap {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.flex-row.flex-wrap>div {
+    width: 25%;
+}
+
+
+
+.orange {
+    background: orange
+}
+
+.cream-green {
+    background: green
+}
+
+.yellow {
+    background: yellow
+}
+
+.violet {
+    background: violet
+}
+
+.sky-blue {
+    background: skyblue
+}
+/*----------------------*/
+
+.flex-example-1 {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+}
+
+/*----------------------*/
+
+.flex-example-2 {
+    /* display: flex; */
+    /* align-items: center; */
+    /* align-items: end; */
+    /* align-items: start; */
+}
+/* ---------------------------------- */
+
+
+.flex-example-1, .flex-example-2 {
+    margin-bottom: 300px;
+}

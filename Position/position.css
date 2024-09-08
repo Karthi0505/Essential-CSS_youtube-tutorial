@@ -1,0 +1,155 @@
+.position-css {
+  font-size: 36px;
+  list-style: none;
+}
+
+.position-css li {
+  margin-bottom: 25px;
+}
+
+.grey-text {
+  color: grey;
+}
+
+.css-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 54px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+button {
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 28px;
+}
+
+button.relative-button {
+  background: blue;
+}
+
+
+/* position: relative */
+/*-----------------------*/
+.relative-button {
+  /* position: relative; */
+  /* top: 80px; */
+  /* bottom: -50px */
+  /* left: 50px; */
+  /* right: 10px */
+}
+
+/*-----------------------*/
+
+
+
+/* position: absolute */
+/*-----------------------*/
+button.absolute-button {
+  background: red;
+}
+
+.absolute-button {
+  /* position: absolute; */
+  /* top: 0; */
+  /* bottom: 0; */
+  /* right:0; */
+  /* left:0; */
+}
+
+/*-----------------------*/
+
+
+/* Relation between absolute and relative */
+/*-----------------------*/
+button.absolute-inside-relative {
+  background: orange;
+  padding: 14px 28px;
+  font-size: 28px;
+}
+
+div.relation_btw_relative-n-absolute {
+  border: 2px solid green;
+}
+
+.absolute-inside-relative {
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+  /* bottom:0; */
+  /* left:0; */
+
+}
+
+.relation_btw_relative-n-absolute {
+  /* position: relative; */
+}
+
+.text-blue {
+  color: #3F51B5;
+}
+
+/*-----------------------*/
+
+
+/* Fixed */
+/*-----------------------*/
+button.fixed-button {
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* right: 0; */
+}
+
+.fixed-button {
+  background: #f44336;
+}
+
+/*-----------------------*/
+
+
+/* Sticky */
+/*-----------------------*/
+button.sticky-button {
+  /* position: sticky; */
+  /* top: 0; */
+}
+
+.sticky-button {
+  background-color: #9C27B0;
+}
+
+button.sticky-button-2 {
+  /* position: sticky; */
+  /* top: 0; */
+}
+
+.sticky-button-2 {
+  background: #d72e8d;
+}
+
+button.sticky-button-3 {
+  /* position: sticky; */
+  /* left: 0; */
+}
+
+.sticky-button-3 {
+  background: #bc7107;
+}
