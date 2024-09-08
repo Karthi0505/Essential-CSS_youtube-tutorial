@@ -1,0 +1,79 @@
+To create a local repository for that project, open your terminal or command prompt and navigate to that working folder.
+
+Then initialize a new Git repository using the following command:
+----------
+git init
+----------
+This command initializes a new Git repository in the current folder. The initialization process creates a .git folder within the project folder that stores the files and data for the repository.
+
+This .git folder may be hidden by default. In Mac's Finder, use Command + Shift + . (period) to make hidden folders and files appear. On Windows, use the File Explorer View tab and check Hidden items
+
+
+Commit Files to the Local Repository
+------------------------------------
+git add .
+git commit -m "Initial commit"
+------------------------------------
+This command commits the files in the Git staging area, to the local repository.
+
+The commit command displays the - branch we are on, - the first few characters of the commit's id, - and the commit message. 
+It then lists the changed files.
+The number after create mode indicates the file type and permissions. 100644 means that these are regular files, not folders, with owner read and write permissions.
+------------------------------------
+
+
+With our local repository in place, it's time to create our remote repository.
+------------------------------------------------------------------------------
+create a remote repository on GitHub
+
+Before you can synchronize the local and remote repositories, you need to establish a connection between them. 
+
+
+add the remote repository to the local repository. Then list the remotes to confirm that the remote was created.
+--------------------------------------------------
+We identify a remote repository by its URL
+---------------
+git remote add origin https://github.com/Karthi0505/Essential-CSS_youtube-tutorial.git
+git remote
+---------------
+
+
+Synchronize Local and Remote Repositories
+-----------------------------------------
+we first fetch the change history from the remote repository 
+and merge it into our local repository using the pull command. 
+Then we push our local change history to the remote repository using the push command.
+
+To pull from the remote repository and merge to our local repository using a Git command:
+----
+dir        // On windows
+OR
+ls        // On a mac
+------------------------------------------------
+git pull origin main --allow-unrelated-histories
+------------------------------------------------
+The --allow-unrelated-histories flag is required the first time we pull because we want to merge two repositories that were created separately and don't currently share a related history.
+
+After the first time, the git pull command doesn't require that flag
+--------------------
+git pull origin main
+--------------------
+Then it fetches the commit history and other data from the specified branch ( main ) of the remote repository that is not in that branch of the local repository.
+
+It merges that data into the local repository. 
+(If there are any conflicts, you'll need to manually resolve them before Git will merge the changes)
+
+Lastly, it updates the local working folder with all files from the most recent commit.
+
+Now our local repository contains all of the commit history from the remote repository.
+
+Next, we push the change history from our local repository to our remote
+--------------------
+git push origin main
+--------------------
+This command merges the local change history to the remote repository. 
+
+
+
+
+Ref: https://www.freecodecamp.org/news/create-and-sync-git-and-github-repositories/#:~:text=To%20synchronize%20our%20local%20and,repository%20using%20the%20push%20command.
